@@ -24,7 +24,7 @@
 listenPort=9999 (proxy监听的本地端口号，必填项)  
 /api=http://127.0.0.1:8090 (url中包含/api的请求会转发到127.0.0.1:8090)  
 default=https://mgt.xxx.com (如果没有匹配中的url，会被转发到 mgt.xxx.com ， 必填项)  
-你甚至可以将配置项中/api=http://127.0.0.1:8090改成/api/clientaccount=http://127.0.0.1:8090，表示只有url中包含/api/clientaccount才会转发到http://127.0.0.1:8090  
+你甚至可以将配置项中/api=http://127.0.0.1:8090 改成/api/clientaccount=http://127.0.0.1:8090, 表示只有url中包含/api/clientaccount才会转发到http://127.0.0.1:8090  
 ## <span id="Run">运行</span>
 命令行进入到proxy文件夹下，输入：go run proxy.go  
 浏览器输入：http://127.0.0.1:9999  
